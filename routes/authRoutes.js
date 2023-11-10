@@ -6,5 +6,9 @@ const authController = require("../controllers/authController");
 
 router.post("/signup", authController.signup);
 router.post("/login", authController.login);
+router.post("/forget-password", authController.forgetPassword);
 
 module.exports = router;
+
+
+//await sendEmail(user.email, "Password Reset", url);
